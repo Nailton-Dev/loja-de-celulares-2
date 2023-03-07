@@ -1,0 +1,124 @@
+/* Grid e posicionamento dos items */
+
+.colunas {
+  display: grid;
+  grid-template-columns: 300px 300px ;
+  justify-content: center;
+  gap: 20px;
+}
+
+.produto {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.comprar {
+  display: grid;
+  justify-content: center;
+  
+}
+
+.imagem {
+  display: grid;
+  border-radius: 4px;
+  width: 100px;
+}
+
+
+/* Animações e efeitos */
+
+.titulo:hover {
+  transform: scale(1.2);
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.imagem:hover{
+  transform: scale(1.2);
+}
+
+.comprar:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.celular:hover {
+  transform: scale(1.1);
+}
+
+.descricao:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 700px) {
+  .colunas {
+    grid-template-columns: 300px;
+  }
+}
+
+/* Estilos basicos */
+
+body {
+  background: 	#F0F8FF;
+  background-image: linear-gradient(to right,#FF00FF, 
+   #9932CC);
+}
+
+h3, h4 {
+  margin: 0px;
+}
+
+.corpo {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo {
+  display: grid;
+  width: 300px;
+  border-radius: 6px;
+  text-align: center;
+  background-image: linear-gradient(to right, #FFFF00, #ADFF2F, #7CFC00,	#00FF00);
+}
+
+.produto {
+  background: #f7f7f7;
+  border: solid 2px #ADFF2F ;
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+.celular {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  text-decoration-line: underline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comprar {
+  background: #1E90FF;
+  background-image: linear-gradient(to right, #8B008B,  
+  #4B0082);
+  color: #ADFF2F;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #ADFF2F;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+}
